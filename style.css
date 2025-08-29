@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: #d40000; /* red accent */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.logo span {
+  text-transform: uppercase;
+}
+
+.social a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: #d40000;
+  font-size: 1.2rem;
+}
+
+/* Main grid */
+main {
+  flex: 1;
+  padding-left: 30px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.item img {
+  width: 100%;
+  display: block;
+}
+.item p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  text-transform: lowercase;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+.pagination a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #d40000;
+}
+.pagination .active {
+  font-weight: bold;
+}
