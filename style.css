@@ -24,7 +24,8 @@ header {
 }
 
 .social a {
-  display: block; 
+  display: block;
+  color: black;
   margin-left: 10px;
   text-decoration: none;
   font-size: 0.5rem;
