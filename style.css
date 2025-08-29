@@ -43,6 +43,12 @@ header {
   font-size: 1.2rem;
 }
 
+hr {
+  border: none;         
+  border-top: 2px solid #d40000;
+  margin: 15px;            
+}
+
 main {
   flex: 1;
   padding-left: 30px;
