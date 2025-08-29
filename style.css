@@ -46,7 +46,8 @@ header {
 hr {
   border: none;         
   border-top: 2px solid #d40000;
-  margin: 15px;            
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 main {
