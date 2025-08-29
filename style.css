@@ -85,4 +85,6 @@ main {
 .pagination .active {
   font-weight: normal;
   border-bottom: 4px solid #d40000;
+  min-width: 8px;   /* make the underline at least 50px long */
+  text-align: center;
 }
