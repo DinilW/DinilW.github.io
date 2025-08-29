@@ -85,5 +85,4 @@ main {
 .pagination .active {
   font-weight: normal;
   border-bottom: 4px solid #d40000;
-  padding: 0 5px;
 }
