@@ -16,8 +16,6 @@ header {
 .logo {
   font-size: 2rem;
   font-weight: bold;
-  -webkit-text-stroke: 3px red;
-  text-stroke: 3px red; 
 }
 .logo span {
   text-transform: uppercase;
