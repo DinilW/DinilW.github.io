@@ -79,7 +79,9 @@ main {
   margin: 0 5px;
   text-decoration: none;
   color: #d40000;
+  padding-bottom: 5px;  
 }
 .pagination .active {
-  font-weight: bold;
+  font-weight: normal;
+  border-bottom: 4px solid #d40000;
 }
