@@ -1,2 +1,2 @@
 # DinilW.github.io
-Website for Red Heavy Records.
+Website for my composer portfolio.
