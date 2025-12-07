@@ -56,6 +56,21 @@
     <h2>Contact</h2>
     <p>Email: <a href="mailto:dinilwick@gmail.com">dinilwick@gmail.com</a></p>
   </section>
+<script>
+  // Get all audio elements on the page
+  const audios = document.querySelectorAll('audio');
+
+  audios.forEach(audio => {
+    audio.addEventListener('play', () => {
+      // Pause all other audio elements
+      audios.forEach(otherAudio => {
+        if (otherAudio !== audio) {
+          otherAudio.pause();
+        }
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
