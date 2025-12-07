@@ -18,24 +18,10 @@
     </ul>
   </nav>
 
-  <!-- Hero Split (Photo + Bio) -->
-  <section id="about" class="hero-split">
-
-    <div class="hero-image">
-      <!-- Change image path if needed -->
-      <img src="images/portrait.jpg" alt="Portrait of Dinil Wick">
-    </div>
-
-    <div class="hero-text">
-      <h1>Dinil Wick</h1>
-      <p class="subtitle">Composer for film & games</p>
-
-      <p class="bio">
-        I am a composer for film, games, and immersive media. 
-        I care deeply about storytelling through sound and emotional musical worlds.
-      </p>
-    </div>
-
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Dinil Wick</h1>
+    <p>Composer for film & games</p>
   </section>
 
   <!-- Portfolio -->
@@ -55,6 +41,14 @@
         <source src="music/track2.mp3" type="audio/mpeg">
       </audio>
     </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <h2>About</h2>
+    <p>
+      I am a compser for films, games and immersive media. I care about telling story through sound.
+    </p>
   </section>
 
   <!-- Contact -->
