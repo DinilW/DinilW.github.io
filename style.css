@@ -37,35 +37,58 @@ nav a:hover {
 }
 
 /* Hero */
+/* Hero */
 .hero {
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
 }
 
 .hero-content {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 2vw; /* proportional gap between image and text */
+  max-width: 90vw;
 }
 
+/* Image scales proportionally */
 .hero-img {
-  width: 290px;
-  height: 290px;
-  max-width: 90vw;
-  max-height: 90vw;
+  width: 15vw; /* 15% of viewport width on desktop */
+  height: auto; /* keeps original aspect ratio */
   object-fit: cover;
   border-radius: 0;
   opacity: 0.9;
+  min-width: 120px; /* prevents image from getting too tiny on very small screens */
 }
 
-
+/* Text scales proportionally */
 .hero-text {
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: calc(1rem + 0.5vw); /* grows/shrinks with screen */
   font-style: italic;
   letter-spacing: 0.05em;
   opacity: 0.7;
+  max-width: 50vw; /* keeps text from overflowing */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem; /* smaller vertical gap */
+  }
+
+  .hero-img {
+    width: 30vw; /* image scales with smaller screen */
+    min-width: 100px;
+  }
+
+  .hero-text {
+    font-size: calc(0.9rem + 1vw); /* slightly bigger for readability on small screens */
+    max-width: 80vw;
+  }
 }
 
 /* Sections */
