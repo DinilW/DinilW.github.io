@@ -12,15 +12,16 @@
   <nav>
     <ul>
       <li><a href="#portfolio">PORTFOLIO</a></li>
-      <li><a href="#about">ABOUT</a></li>
       <li><a href="#contact">CONTACT</a></li>
     </ul>
   </nav>
 
   <!-- Hero -->
   <section class="hero">
-    <h1>Dinil Wick</h1>
-    <p>Composer for film & games</p>
+    <div class="hero-content">
+      <img src="images/profile.jpg" alt="Portrait" class="hero-img">
+      <p class="hero-text">Composer for film & games</p>
+    </div>
   </section>
 
   <!-- Portfolio -->
@@ -46,26 +47,17 @@
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="section about">
-    <h2>About</h2>
-    <p>
-      I am a composer for films, games and immersive media. I care about telling story through sound.
-    </p>
-  </section>
-
   <!-- Contact -->
   <section id="contact" class="section contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:dinilwick@gmail.com">dinilwick@gmail.com</a></p>
   </section>
+
 <script>
-  // Get all audio elements on the page
   const audios = document.querySelectorAll('audio');
 
   audios.forEach(audio => {
     audio.addEventListener('play', () => {
-      // Pause all other audio elements
       audios.forEach(otherAudio => {
         if (otherAudio !== audio) {
           otherAudio.pause();
@@ -77,4 +69,3 @@
 
 </body>
 </html>
-
