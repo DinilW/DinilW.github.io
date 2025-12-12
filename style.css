@@ -81,7 +81,7 @@ nav a:hover {
   }
 
   .hero-img {
-    width: 30vw; /* image scales with smaller screen */
+    width: 45vw; /* image scales with smaller screen */
     min-width: 100px;
   }
 
