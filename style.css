@@ -1,13 +1,21 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-body {
-  background: #000;
-  color: #f5f5f5;
-  font-family: "Inter", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background: #050505;
+  color: #eaeaea;
+  font-family: "Inter", sans-serif;
+  letter-spacing: normal;
+}
+
+/* Nav */
 nav {
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 40px 60px;
 }
 
@@ -19,108 +27,146 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #fff;
-  font-size: 0.9rem;
-  letter-spacing: 0.12em;
-  font-weight: 500;
+  color: #e0e0e0;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
 }
 
 nav a:hover {
   opacity: 0.6;
 }
 
+/* Hero */
+/* Hero */
 .hero {
-  width: 100%;
-  min-height: 80vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 0 20px;
 }
 
-.hero-container {
+.hero-content {
   display: flex;
   align-items: center;
-  gap: 4vw;
-  max-width: 1100px;
-  width: 100%;
+  gap: 2vw; /* proportional gap between image and text */
+  max-width: 90vw;
 }
 
+/* Image scales proportionally */
 .hero-img {
-  width: 34vw;
-  max-width: 380px;
-  min-width: 200px;
-  height: auto;
+  width: 15vw; /* 15% of viewport width on desktop */
+  height: auto; /* keeps original aspect ratio */
   object-fit: cover;
   border-radius: 0;
-}
-
-.hero-text {
-  font-size: clamp(1.3rem, 2vw + 0.5rem, 2.3rem);
-  line-height: 1.4;
   opacity: 0.9;
-  font-weight: 400;
-  max-width: 500px;
+  min-width: 120px; /* prevents image from getting too tiny on very small screens */
 }
 
-.highlight {
-  color: #ccff44;
-  font-weight: 600;
+/* Text scales proportionally */
+.hero-text {
+  font-size: calc(1rem + 0.5vw); /* grows/shrinks with screen */
+  font-style: normal;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+  max-width: 50vw; /* keeps text from overflowing */
 }
 
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem; /* smaller vertical gap */
+  }
+
+  .hero-img {
+    width: 30vw; /* image scales with smaller screen */
+    min-width: 100px;
+  }
+
+  .hero-text {
+    font-size: calc(0.9rem + 1vw); /* slightly bigger for readability on small screens */
+    max-width: 80vw;
+  }
+}
+
+/* Sections */
 .section {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 120px 20px;
 }
 
 .section h2 {
   text-align: center;
+  font-size: 1.6rem;
   letter-spacing: 0.15em;
   margin-bottom: 60px;
-  font-weight: 500;
-  font-size: 1.6rem;
+  font-weight: normal;
 }
 
-.track-group {
-  margin-bottom: 80px;
-}
 
+/* Tracks */
 .group-title {
+  font-family: 'Helvetica Neue', sans-serif;
   font-weight: 700;
+  letter-spacing: 0.05em;
   margin-bottom: 1.5rem;
+  color: #fff;
 }
 
 .track {
   margin: 1.5rem 0;
   padding: 1rem;
-  background: #111;
+  background: #1a1a1a;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+/* Track titles (Sci-fi / Epic etc.) */
 .track h4 {
   margin-bottom: 0.5rem;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
   font-weight: 500;
 }
 
-audio {
-  width: 100%;
+.track h3 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 500;
 }
 
-iframe {
-  border-radius: 12px;
-  width: 100%;
-  min-height: 380px;
+.audio-player {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
+.audio-player audio {
+  width: 100%;
+  outline: none;
+  border-radius: 8px;
+  background: #333;
+  accent-color: #00ffea;
+}
+
+.audio-player:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}
+
+/* Contact */
 .contact p {
   text-align: center;
   line-height: 1.8;
 }
 
 .contact a {
-  color: #ccc;
+  color: #aaa;
   text-decoration: none;
 }
 
@@ -128,26 +174,6 @@ iframe {
   color: #fff;
 }
 
-@media (max-width: 768px) {
-  nav {
-    padding: 30px 20px;
-  }
-
-  nav ul {
-    gap: 20px;
-  }
-
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-img {
-    width: 60vw;
-    max-width: 300px;
-  }
-
-  .hero-text {
-    max-width: 90vw;
-  }
+html {
+  scroll-behavior: smooth;
 }

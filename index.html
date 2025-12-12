@@ -4,68 +4,163 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dinil Wick — Composer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- Navigation -->
   <nav>
     <ul>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#other-works">Other Works</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      <li><a href="#other-works">OTHER WORKS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
     </ul>
   </nav>
 
+  <!-- Hero -->
   <section class="hero">
-    <div class="hero-container">
+    <div class="hero-content">
       <img src="images/profile.jpg" alt="Portrait" class="hero-img">
-      <p class="hero-text">
-        Hey I'm <span class="highlight">Dinil</span>, I compose for video games and films.<br><br>
-        I care about creating story and atmosphere through sound.
+      <p class="hero-text">Hey I'm Dinil, I compose for video games and film.<br>
+      I care about creating story and atmosphere through sound.<br>
       </p>
     </div>
   </section>
 
+  <!-- Portfolio -->
   <section id="portfolio" class="section">
-    <h2>PORTFOLIO</h2>
+  <h2>Portfolio</h2>
 
-    <div class="track-group">
-      <h3 class="group-title">Electronic</h3>
-      <div class="track"><h4>soft and sweet</h4><audio controls><source src="music/soft and sweet.mp3"></audio></div>
-      <div class="track"><h4>home</h4><audio controls><source src="music/home.mp3"></audio></div>
-      <div class="track"><h4>introspect</h4><audio controls><source src="music/introspect.mp3"></audio></div>
-      <div class="track"><h4>groovy</h4><audio controls><source src="music/groovy.mp3"></audio></div>
+  <!-- Electronic Tracks -->
+  <div class="track-group">
+    <h3 class="group-title">Electronic</h3>
+
+    <div class="track">
+      <h4>soft and sweet</h4>
+      <div class="audio-player">
+        <audio controls>
+          <source src="music/soft and sweet.mp3" type="audio/mpeg">
+        </audio>
+      </div>
     </div>
 
-    <div class="track-group">
-      <h3 class="group-title">Orchestral</h3>
-      <div class="track"><h4>elegant harp</h4><audio controls><source src="music/elegant harp.mp3"></audio></div>
-      <div class="track"><h4>increasing tension</h4><audio controls><source src="music/increasing tension.mp3"></audio></div>
+    <div class="track">
+      <h4>home</h4>
+      <div class="audio-player">
+        <audio controls>
+          <source src="music/home.mp3" type="audio/mpeg">
+        </audio>
+      </div>
     </div>
 
-    <div class="track-group">
-      <h3 class="group-title">Rock</h3>
-      <div class="track"><h4>coming of age</h4><audio controls><source src="music/coming of age.mp3"></audio></div>
-      <div class="track"><h4>heavy shoegaze</h4><audio controls><source src="music/heavy shoegaze.mp3"></audio></div>
+    <div class="track">
+      <h4>introspect</h4>
+      <div class="audio-player">
+        <audio controls>
+          <source src="music/introspect.mp3" type="audio/mpeg">
+        </audio>
+      </div>
     </div>
-  </section>
 
-  <section id="other-works" class="section">
-    <h2>OTHER WORKS</h2>
-    <iframe src="https://open.spotify.com/embed/artist/6t79jfal5wa93Pmjb42awP" loading="lazy"></iframe>
-  </section>
+    <div class="track">
+      <h4>groovy</h4>
+      <div class="audio-player">
+        <audio controls>
+          <source src="music/groovy.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
 
+  <!-- Orchestral Tracks -->
+  <div class="track-group">
+    <h3 class="group-title">Orchestral</h3>
+
+    <div class="track">
+      <h4>elegant harp</h4>
+      <div class="audio-player">
+        <audio controls>
+          <source src="music/elegant harp.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <div class="track">
+      <h4>increasing tension</h4>
+      <div class="audio-player">
+        <audio controls>
+          <source src="music/increasing tension.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    
+  </div>
+
+  <!-- Rock Tracks -->
+  <div class="track-group">
+    <h3 class="group-title">Rock</h3>
+
+    <div class="track">
+      <h4>coming of age</h4>
+      <div class="audio-player">
+        <audio controls>
+          <source src="music/coming of age.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <div class="track">
+      <h4>heavy shoegaze</h4>
+      <div class="audio-player">
+        <audio controls>
+          <source src="music/heavy shoegaze.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+  </div>
+
+
+</section>
+
+<!-- Other Works -->
+<section id="other-works" class="section">
+  <h2>Other Works</h2>
+
+  <div class="spotify-embed">
+    <iframe
+      style="border-radius:12px"
+      src="https://open.spotify.com/embed/artist/6t79jfal5wa93Pmjb42awP"
+      width="100%"
+      height="380"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+  <!-- Contact -->
   <section id="contact" class="section contact">
-    <h2>CONTACT</h2>
+    <h2>Contact</h2>
     <p>Email: <a href="mailto:dinilwick@gmail.com">dinilwick@gmail.com</a></p>
   </section>
 
 <script>
   const audios = document.querySelectorAll('audio');
-  audios.forEach(a => a.addEventListener('play', () => {
-    audios.forEach(b => { if (b !== a) b.pause(); });
-  }));
+
+  audios.forEach(audio => {
+    audio.addEventListener('play', () => {
+      audios.forEach(otherAudio => {
+        if (otherAudio !== audio) {
+          otherAudio.pause();
+        }
+      });
+    });
+  });
 </script>
+
 </body>
 </html>
