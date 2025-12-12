@@ -91,10 +91,6 @@ nav a:hover {
     max-width: 80vw;
   }
 
-  .collage {
-        grid-auto-rows: 250px;
-        gap: 15px;
-    }
 }
 
 /* Sections */
