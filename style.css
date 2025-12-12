@@ -91,6 +91,22 @@ nav a:hover {
     max-width: 80vw;
   }
 
+  nav {
+    flex-direction: column;       /* stack items vertically */
+    padding: 20px;                /* smaller padding for small screens */
+  }
+
+  nav ul {
+    flex-direction: column;       /* stack links vertically */
+    gap: 15px;                    /* smaller gap between links */
+    width: 100%;                  /* take full width */
+    align-items: center;          /* center links horizontally */
+  }
+
+  nav a {
+    font-size: 1rem;              /* maintain readable size */
+  }
+
 }
 
 /* Sections */
