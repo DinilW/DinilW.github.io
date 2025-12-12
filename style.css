@@ -171,7 +171,8 @@ nav a:hover {
 
 .collage-wrapper {
     display: flex;
-    height: 100vh;           /* fill viewport */
+    justify-content: flex-start; /* align items to the left */
+    height: 100vh;
 }
 
 /* All items absolute for messy layout */
