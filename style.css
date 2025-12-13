@@ -68,7 +68,6 @@ nav a:hover {
 .hero-text {
   font-size: calc(1rem + 0.5vw); /* grows/shrinks with screen */
   font-style: normal;
-  letter-spacing: 0.05em;
   opacity: 1;
   max-width: 50vw; /* keeps text from overflowing */
 }
