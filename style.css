@@ -108,7 +108,8 @@ nav a:hover {
   }
 
   .collage-img {
-    max-width: 70%;
+    width: 90vw;     /* scales with viewport width */
+    max-width: none; /* remove desktop cap */
   }
 
 }
