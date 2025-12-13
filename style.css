@@ -112,11 +112,11 @@ nav a:hover {
   }
 
   .collage-item img {
-    width: 80px !important;
+    width: 100px !important;
   }
 
   .collage-item.central img {
-    width: 120px !important;
+    width: 140px !important;
   }
 
 }
