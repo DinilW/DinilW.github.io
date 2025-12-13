@@ -107,6 +107,18 @@ nav a:hover {
     font-size: 1rem;              /* maintain readable size */
   }
 
+  .collage-wrapper {
+    height: 70vh; /* reduce vertical space */
+  }
+
+  .collage-item img {
+    width: 110px; /* smaller images */
+  }
+
+  .collage-item.central img {
+    width: 160px; /* smaller central image */
+  }
+
 }
 
 /* Sections */
