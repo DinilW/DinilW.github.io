@@ -50,27 +50,27 @@ nav a:hover {
 .hero-content {
   display: flex;
   align-items: center;
-  gap: 2vw; /* proportional gap between image and text */
+  gap: 2vw; 
   max-width: 90vw;
 }
 
 /* Image scales proportionally */
 .hero-img {
-  width: 30vw; /* 15% of viewport width on desktop */
-  height: auto; /* keeps original aspect ratio */
+  width: 30vw; 
+  height: auto; 
   object-fit: cover;
   border-radius: 0;
   opacity: 0.9;
-  min-width: 120px; /* prevents image from getting too tiny on very small screens */
-  max-width: 300px; /* prevents image from getting too tiny on very small screens */
+  min-width: 120px; 
+  max-width: 300px; 
 }
 
 /* Text scales proportionally */
 .hero-text {
-  font-size: calc(1rem + 0.5vw); /* grows/shrinks with screen */
+  font-size: calc(1rem + 0.5vw); 
   font-style: normal;
   opacity: 1;
-  max-width: 50vw; /* keeps text from overflowing */
+  max-width: 50vw; 
 }
 
 /* Mobile adjustments */
@@ -78,38 +78,38 @@ nav a:hover {
   .hero-content {
     flex-direction: column;
     text-align: center;
-    gap: 1.5rem; /* smaller vertical gap */
+    gap: 1.5rem; 
   }
 
   .hero-img {
-    width: 45vw; /* image scales with smaller screen */
+    width: 45vw; 
     min-width: 100px;
   }
 
   .hero-text {
-    font-size: calc(0.9rem + 1vw); /* slightly bigger for readability on small screens */
+    font-size: calc(0.9rem + 1vw); 
     max-width: 80vw;
   }
 
   nav {
-    flex-direction: column;       /* stack items vertically */
-    padding: 20px;                /* smaller padding for small screens */
+    flex-direction: column;      
+    padding: 20px;               
   }
 
   nav ul {
-    flex-direction: column;       /* stack links vertically */
-    gap: 15px;                    /* smaller gap between links */
-    width: 100%;                  /* take full width */
-    align-items: center;          /* center links horizontally */
+    flex-direction: column;      
+    gap: 15px;                   
+    width: 100%;                
+    align-items: center;         
   }
 
   nav a {
-    font-size: 1rem;              /* maintain readable size */
+    font-size: 1rem;    
   }
 
   .collage-img {
-    width: 90vw;     /* scales with viewport width */
-    max-width: none; /* remove desktop cap */
+    width: 90vw;   
+    max-width: none;
   }
 
 }
@@ -182,8 +182,8 @@ nav a:hover {
 
 .collage-img {
   width: 100%;
-  max-width: 600px;   /* caps size on desktop */
-  height: auto;       /* preserves aspect ratio */
+  max-width: 600px;  
+  height: auto;      
   display: block;
   margin: 40px auto 0;
 }
